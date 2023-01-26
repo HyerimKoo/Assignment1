@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="toolbar_name">toolbar Name</string>
+    <string name="_4">4</string>
+    <string name="home">HOME</string>
+    <string name="menu">MENU</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="toolbar_name_is_freely_n">Toolbar Name is freely, /n</string>
+</resources>

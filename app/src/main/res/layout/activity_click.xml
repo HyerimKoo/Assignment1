@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClickActivity">
+
+    <RelativeLayout
+        android:id="@+id/blackBox"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/toolbarName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/toolbar_name"
+            android:textSize="30sp"
+            android:textColor="@color/white" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_toStartOf ="@id/toolbarName"
+            android:layout_marginEnd="30dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="#D6D6D6"
+                android:text="@string/home"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_toEndOf ="@id/toolbarName"
+            android:layout_marginStart="30dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="#FFD6D6D6"
+                android:text="@string/menu"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pinkBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/blackBox"
+        android:background="#fff36daf"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+
+        <Button
+            android:id="@+id/BtnA"
+            android:text="@string/_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#fff3ee6b"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/BtnB"
+            android:text="@string/_2"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ffa96df3"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/BtnC"
+            android:text="@string/_3"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ff6df3c8"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/BtnD"
+            android:text="@string/_4"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#fff76e79"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+<!--<Button-->
+<!--android:id="@+id/BtnA"-->
+<!--android:text="1"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="60dp"-->
+<!--android:background="#fff3ee6b"-->
+<!--android:textColor="@color/black"-->
+<!--android:textSize="30sp"-->
+<!--android:layout_alignParentBottom="true"-->
+<!--android:layout_toLeftOf="@id/BtnB"-->
+<!--android:layout_weight="1" />-->
+
+<!--<Button-->
+<!--android:id="@+id/BtnB"-->
+<!--android:text="2"-->
+<!--android:textSize="30sp"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="60dp"-->
+<!--android:background="#ffa96df3"-->
+<!--android:textColor="@color/black"-->
+<!--android:layout_alignParentBottom="true"-->
+<!--android:layout_toLeftOf="@id/BtnC"-->
+<!--android:layout_weight="1" />-->
+
+<!--<Button-->
+<!--android:id="@+id/BtnC"-->
+<!--android:text="3"-->
+<!--android:textSize="30sp"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="60dp"-->
+<!--android:background="#ff6df3c8"-->
+<!--android:textColor="@color/black"-->
+<!--android:layout_alignParentBottom="true"-->
+<!--android:layout_toLeftOf="@id/BtnD"-->
+<!--android:layout_weight="1" />-->
+
+<!--<Button-->
+<!--android:id="@+id/BtnD"-->
+<!--android:text="4"-->
+<!--android:textSize="30sp"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="60dp"-->
+<!--android:background="#fff76e79"-->
+<!--android:textColor="@color/black"-->
+<!--android:layout_alignParentBottom="true"-->
+<!--android:layout_alignParentRight="true"-->
+<!--android:layout_weight="1"/>-->
